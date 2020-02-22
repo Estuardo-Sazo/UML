@@ -5,6 +5,8 @@
  */
 package pkg.humano;
 
+import java.util.Date;
+
 /**
  *
  * @author Rolaescobar
@@ -14,9 +16,9 @@ public class Persona {
     private String nombre;
     private int edad;
     private String sexo;
-    private String fecha_nacimiento;
+    private Date fecha_nacimiento;
 
-    public Persona(String nombre, int edad, String sexo, String fecha_nacimiento) {
+    public Persona(String nombre, int edad, String sexo, Date fecha_nacimiento) {
         this.nombre = nombre;
         this.edad = edad;
         this.sexo = sexo;
@@ -24,11 +26,11 @@ public class Persona {
     }
 
     
-    public String getFecha_nacimiento() {
+    public Date getFecha_nacimiento() {
         return fecha_nacimiento;
     }
 
-    public void setFecha_nacimiento(String fecha_nacimiento) {
+    public void setFecha_nacimiento(Date fecha_nacimiento) {
         this.fecha_nacimiento = fecha_nacimiento;
     }
     
