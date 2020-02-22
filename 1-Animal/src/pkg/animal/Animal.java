@@ -8,12 +8,23 @@ public class Animal {
 
     private String ojos;
     private String boca;
+    private String especie;
 
-    public Animal(String ojos, String boca) {
+    public Animal(String ojos, String boca, String especie) {
         this.ojos = ojos;
         this.boca = boca;
+        this.especie = especie;
     }
 
+    public String getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
+
+    
     public String getOjos() {
         return ojos;
     }
