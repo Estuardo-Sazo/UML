@@ -13,7 +13,25 @@ public class Persona {
 
     private String nombre;
     private int edad;
+    private String sexo;
+    private String fecha_nacimiento;
 
+    public Persona(String nombre, int edad, String sexo, String fecha_nacimiento) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.sexo = sexo;
+        this.fecha_nacimiento = fecha_nacimiento;
+    }
+
+    
+    public String getFecha_nacimiento() {
+        return fecha_nacimiento;
+    }
+
+    public void setFecha_nacimiento(String fecha_nacimiento) {
+        this.fecha_nacimiento = fecha_nacimiento;
+    }
+    
     public String getSexo() {
         return sexo;
     }
@@ -21,17 +39,6 @@ public class Persona {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-    private String sexo;
-
-    public Persona(String nombre, int edad, String sexo) {
-        this.nombre = nombre;
-        this.edad = edad;
-<<<<<<< HEAD
-    }    
-=======
-        this.sexo = sexo;
-    }
->>>>>>> 43dc54980a55bcfae96c62e9de48072eeef2dc13
 
     public String getNombre() {
         return nombre;
